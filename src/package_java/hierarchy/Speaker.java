@@ -15,8 +15,8 @@ public class Speaker extends AbstractAudio {
     public void setPower(int power) {
         this.power = power;
     }
-
+    @Override
     public String description() {
-        return "Название: " + getName() + ", стоимость: " + getPrice() +  ", мощность: " + getPower() + "Вт.";
+        return super.description() +  ", мощность: " + getPower() + "Вт.";
     }
 }

@@ -15,8 +15,8 @@ public class BluetothSpeaker extends Speaker {
     public void setVersionBluetoth(int versionBluetoth) {
         this.versionBluetoth = versionBluetoth;
     }
-
+    @Override
     public String description() {
-        return "Название: " + getName() + ", стоимость: " + getPrice() +  ", мощность: " + getPower() + "Вт, версия блютус: " + getVersionBluetoth();
+        return super.description() +  ", мощность: " + getPower() + "Вт, версия блютус: " + getVersionBluetoth();
     }
 }

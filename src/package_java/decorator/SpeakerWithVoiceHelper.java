@@ -12,7 +12,7 @@ public class SpeakerWithVoiceHelper extends Decorator {
 
     @Override
     public String description() {
-        return super.description() + " с встроенным голосовым помошником.";
+        return super.description() + ". Особенности: с встроенным голосовым помошником.";
     }
 
     @Override

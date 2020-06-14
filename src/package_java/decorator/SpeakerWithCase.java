@@ -12,7 +12,7 @@ public class SpeakerWithCase extends Decorator {
 
     @Override
     public String description() {
-        return super.description() + " с чехлом в комплекте.";
+        return super.description() + ". Особенности: с чехлом в комплекте.";
     }
 
     @Override

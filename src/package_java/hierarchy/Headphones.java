@@ -17,6 +17,6 @@ public class Headphones extends Speaker {
     }
 
     public String description() {
-        return "Название: " + getName() + ", стоимость: " + getPrice() +  ", мощность: " + getPower() + "Вт, длинная кабеля: " + getLongOfKabel();
+        return super.description() + ", мощность: " + getPower() + "Вт, длинная кабеля: " + getLongOfKabel();
     }
 }

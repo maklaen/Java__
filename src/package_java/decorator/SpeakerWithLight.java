@@ -12,7 +12,7 @@ public class SpeakerWithLight extends Decorator {
 
     @Override
     public String description() {
-        return super.description() + " с подсветкой.";
+        return super.description() + ". Особенности: с подсветкой.";
     }
 
     @Override

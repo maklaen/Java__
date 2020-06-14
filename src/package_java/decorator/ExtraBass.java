@@ -12,7 +12,7 @@ public class ExtraBass extends Decorator {
 
     @Override
     public String description() {
-        return super.description() + " с функцией усилинеия низких частот.";
+        return super.description() + ". Особенности: с функцией усилинеия низких частот.";
     }
 
     @Override

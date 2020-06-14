@@ -9,9 +9,14 @@ public class ThreadOne extends Thread {
 
     @Override
     public void run() {
-        while (this.value.value <= 10) {
+        while (this.value.value < 10) {
             synchronized (value) {
                 this.value.value ++;
+                try {
+                    Thread.currentThread().sleep(500);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
                 System.out.println("[1] value = " + value.value);
             }
         }

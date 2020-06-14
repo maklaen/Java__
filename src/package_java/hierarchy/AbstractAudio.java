@@ -17,13 +17,11 @@ public abstract class AbstractAudio {
         return price;
     }
 
-    public void printPrice(){
-        System.out.println("Цена: " +getPrice());
-    }
 
     public String description() {
-        return "Название: " + name;
+        return "Название: " + getName() + ", стоимость: " + getPrice();
     }
+
     public void printDescription()
     {
         System.out.println(description());

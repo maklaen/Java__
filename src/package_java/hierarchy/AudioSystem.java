@@ -15,8 +15,13 @@ public class AudioSystem extends Speaker {
     public void setCountOfSpeakers(int countOfSpeakers) {
         this.countOfSpeakers = countOfSpeakers;
     }
-
+    @Override
     public String description() {
-        return "Название: " + getName() + ", стоимость: " + getPrice() +  ", мощность: " + getPower() + "Вт, количество динамков: " + getCountOfSpeakers();
+        return super.description() + ", мощность: " + getPower() + "Вт, количество динамков: " + getCountOfSpeakers();
+    }
+
+    @Override
+    public void printDescription() {
+        super.printDescription();
     }
 }

@@ -9,9 +9,14 @@ public class ThreadTwo extends Thread {
 
     @Override
     public void run() {
-        if (this.value.value > 10) {
+        if (this.value.value >= 10) {
             synchronized (value) {
                 this.value.value -= 10;
+                try {
+                    Thread.currentThread().sleep(500);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
                 System.out.println("[2] value = " + value.value);
             }
         }
